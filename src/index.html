@@ -11,19 +11,27 @@
       crossorigin="anonymous"
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
+    <link rel="stylesheet" href="stykle.css" />
   </head>
-  <body>
-    <div class="card">
-      <h1 class="mt-5">Hello Rigo!</h1>
-
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
+  <style>
+    .card {
+        width: 300px; /* Ancho de la carta */
+        height: 450px; /* Alto de la carta */
+    }
+</style>
+</head>
+<body class="">
+  <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">"
+<div class="card">
+    <div class="card-header bg-transparent border-0"> <!-- Parte superior izquierda -->
+        <i class="fas fa-heart fa-3x"></i> <!-- Icono del palo -->
     </div>
-  </body>
+    <div class="card-body d-flex align-items-center justify-content-center"> <!-- Centro -->
+        <h1 class="card-title display-1 font-weight-bold"><strong>8</strong></h1> <!-- Número de la carta -->
+    </div>
+    <div class="card-footer bg-transparent border-0 d-flex justify-content-end fa-3x"> <!-- Parte inferior derecha -->
+        <i class="fas fa-heart"></i> <!-- Otro icono del palo -->
+    </div>
+</div>
+</body>
 </html>
