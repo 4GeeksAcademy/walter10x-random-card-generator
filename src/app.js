@@ -33,11 +33,11 @@ window.onload = function() {
     numbersValue[Math.floor(Math.random() * numbersValue.length)];
   numberRandom.textContent = valuesIndex;
   // determinar si la opcion es corazon pintar de color rojo
-  if (sticksIndex === "♥") {
-    stickTop.textContent = sticksIndex;
-    stickTop.style.color = "red";
-    stickBottom.textContent = sticksIndex;
-    stickBottom.style.color = "red";
-  } else stickTop.textContent = sticksIndex;
+  stickTop.textContent = sticksIndex;
   stickBottom.textContent = sticksIndex;
+  if (sticksIndex === "♥" || sticksIndex === "♦") {
+    // También debería incluir ♦ para rojo
+    stickTop.style.color = "red";
+    stickBottom.style.color = "red";
+  }
 };
