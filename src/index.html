@@ -13,25 +13,35 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
     <link rel="stylesheet" href="stykle.css" />
   </head>
-  <style>
-    .card {
-        width: 300px; /* Ancho de la carta */
-        height: 450px; /* Alto de la carta */
-    }
-</style>
-</head>
-<body class="">
-  <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">"
-<div class="card">
-    <div class="card-header bg-transparent border-0"> <!-- Parte superior izquierda -->
-        <i class="fas fa-heart fa-3x"></i> <!-- Icono del palo -->
+
+  <body>
+    <div
+      class="container d-flex justify-content-center align-items-center"
+      style="height: 100vh;"
+    >
+      "
+      <div class="card">
+        <div class="card-header bg-transparent border-0">
+          <!-- Parte superior izquierda -->
+          <h1 class="" id="stick-top"></h1>
+        </div>
+        <div
+          class="card-body d-flex align-items-center justify-content-center"
+          id="numberRandomix"
+        >
+          <!-- Centro -->
+          <h1 class="card-title display-1 font-weight-bold"></h1>
+          <!-- Número de la carta -->
+        </div>
+        <div
+          class="card-footer bg-transparent border-0 d-flex justify-content-end fa-3x"
+          id="stick-bottom"
+        >
+          <!-- Parte inferior derecha -->
+          <h1 class="" id="stick-bottom"></h1>
+        </div>
+      </div>
     </div>
-    <div class="card-body d-flex align-items-center justify-content-center"> <!-- Centro -->
-        <h1 class="card-title display-1 font-weight-bold"><strong>8</strong></h1> <!-- Número de la carta -->
-    </div>
-    <div class="card-footer bg-transparent border-0 d-flex justify-content-end fa-3x"> <!-- Parte inferior derecha -->
-        <i class="fas fa-heart"></i> <!-- Otro icono del palo -->
-    </div>
-</div>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>

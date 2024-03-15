@@ -1,1 +1,28 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: green; /* Fondo verde para el body */
+}
+
+#stick-top {
+  font-size: 4rem;
+  margin-top: -20px;
+  padding: 10px; /* Agrega padding */
+  margin-right: auto;
+}
+#stick-bottom {
+  font-size: 4rem;
+  margin-bottom: -20px;
+  transform: rotate(180deg);
+  margin-left: auto; /* Agrega esto para mantener la posición */
+}
+
+#numberRandomix {
+  font-size: 5rem; /* Tamaño de fuente más grande */
+  font-weight: bold; /* Texto en negrita */
+}
+
+.card {
+  width: 300px; /* Ancho de la carta */
+  height: 450px; /* Alto de la carta */
+}

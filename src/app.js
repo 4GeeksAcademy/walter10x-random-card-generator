@@ -6,7 +6,12 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function() {
-  const sticks = ["Corazones", "Picas", "Treboles", "Diamantes"];
+  // obetener elementos de las partes de las cartas
+  const stickTop = document.getElementById("stick-top");
+  const numberRandom = document.getElementById("numberRandomix");
+  const stickBottom = document.getElementById("stick-bottom");
+
+  const sticks = ["♥", "♠", "♣", "♦"];
   const numbersValue = [
     "As",
     "2",
@@ -23,12 +28,16 @@ window.onload = function() {
     "K"
   ];
 
-  console.log(sticks);
-  console.log(numbersValue);
-
   const sticksIndex = sticks[Math.floor(Math.random() * sticks.length)];
   const valuesIndex =
     numbersValue[Math.floor(Math.random() * numbersValue.length)];
-  console.log(sticksIndex);
-  console.log(valuesIndex);
+  numberRandom.textContent = valuesIndex;
+  // determinar si la opcion es corazon pintar de color rojo
+  if (sticksIndex === "♥") {
+    stickTop.textContent = sticksIndex;
+    stickTop.style.color = "red";
+    stickBottom.textContent = sticksIndex;
+    stickBottom.style.color = "red";
+  } else stickTop.textContent = sticksIndex;
+  stickBottom.textContent = sticksIndex;
 };
