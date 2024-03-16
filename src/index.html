@@ -19,8 +19,7 @@
       class="container d-flex justify-content-center align-items-center"
       style="height: 100vh;"
     >
-      "
-      <div class="card">
+      <div class="card" id="card1">
         <div class="card-header bg-transparent border-0">
           <!-- Parte superior izquierda -->
           <h1 class="" id="stick-top"></h1>
@@ -38,10 +37,40 @@
           id="stick-bottom"
         >
           <!-- Parte inferior derecha -->
-          <h1 class="" id="stick-bottom"></h1>
+          <h1 id="stick-bottom2"></h1>
+        </div>
+      </div>
+      <div class="row g-3" style="margin-left: 120px;">
+        <div class="col-md-3">
+          <label for="widthcard"><strong>Ancho:</strong></label>
+          <input
+            type="number"
+            class="form-control form-control-md"
+            id="width-card"
+          />
+        </div>
+        <div class="col-md-3">
+          <label for="heightcard"> <strong>Altura</strong></label>
+          <input
+            type="number"
+            class="form-control form-control-md"
+            id="height-card"
+          />
+        </div>
+        <div class="col-md-3">
+          <label for="btn3"><strong>Generar:</strong></label>
+          <button
+            onclick="changeCardSize()"
+            type="button"
+            class="form-control btn btn-secondary btn-md"
+            id="btn3"
+          >
+            Valores
+          </button>
         </div>
       </div>
     </div>
+
     <script src="app.js"></script>
   </body>
 </html>

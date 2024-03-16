@@ -26,3 +26,14 @@ body {
   width: 300px; /* Ancho de la carta */
   height: 450px; /* Alto de la carta */
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+}
+
+.row > * {
+  margin-top: 30px;
+  margin-left: 5px;
+}
